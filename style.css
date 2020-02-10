@@ -1,0 +1,378 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+@font-face {
+font-family: 'FeijoaBold';
+src: url('FeijoaBold.eot');
+src: url('FeijoaBold.eot?#iefix') format('embedded-opentype'),
+url('FeijoaBold.woff') format('woff'),
+url('FeijoaBold.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'FeijoaMedium';
+src: url('FeijoaMedium.eot');
+src: url('FeijoaMedium.eot?#iefix') format('embedded-opentype'),
+url('FeijoaMedium.woff') format('woff'),
+url('FeijoaMedium.ttf') format('truetype');
+font-weight: 500;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'FeijoaDisplay';
+src: url('FeijoaDisplay.eot');
+src: url('FeijoaDisplay.eot?#iefix') format('embedded-opentype'),
+url('FeijoaDisplay.woff') format('woff'),
+url('FeijoaDisplay.ttf') format('truetype');
+font-weight: 900;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'FeijoaMediumItalic';
+src: url('FeijoaMediumItalic.eot');
+src: url('FeijoaMediumItalic.eot?#iefix') format('embedded-opentype'),
+url('FeijoaMediumItalic.woff') format('woff'),
+url('FeijoaMediumItalic.ttf') format('truetype');
+font-weight: 500;
+font-style: italic;
+}
+
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+body{
+    font-family: 'helvetica';
+    height:100%;
+    background-color: #dcd0c0;
+    color: #373737;
+    hyphens: none;
+
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+    background-color:#dcd0c0;  
+    /*    border: solid 1px red;*/
+    height: auto;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+header a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+#title, #nav{
+    flex-basis: 50%; 
+    visibility: visible;
+    font-family: 'FeijoaMedium', 'Times', serif;
+    height: auto;
+
+}
+
+#myBtn{
+  font-family: 'FeijoaMedium', 'Times', serif;
+ font-size: 1em;
+}
+
+#title a:hover{
+    color: dimgray;
+    transition: color .3s;
+
+}
+
+#title{
+    line-height: 60px;
+    padding-left: 30px;
+    /*border: solid 1px green;*/
+
+}
+
+
+#altTitle a:hover{
+    transition: color .3s;
+    color: dimgray;
+    
+}
+
+#altTitle{
+    line-height: 60px;
+    position: fixed;
+    padding-left: 30px;
+    visibility: hidden;
+    font-family: 'FeijoaMedium', 'Times', serif;
+    /*    border: solid 1px green;*/
+    
+}
+
+#nav a{
+    display: inline-block;
+    line-height: 60px;
+    text-align: right;
+    width: auto;
+    position: absolute;
+    padding-right: 30px;
+    right: 0px;
+
+}
+
+
+
+#nav a:hover{
+    color: dimgrey;
+    transition: color .5s;
+    
+}
+
+.mainContent{
+    width: auto;
+    height: auto;
+    margin: 0px auto 0px auto;
+    /*    border: 1px solid black;*/
+    position: relative; 
+    top: 60px;
+    
+}
+
+.imgWrapper {
+    width: 100%;
+    height: auto;
+/*    border: 1px solid green;*/
+    position: relative;
+
+}   
+.imgWrapper img {
+    display: block;
+    width: 600px;
+    margin: 30px auto;
+
+/*    border: 1px solid green;*/
+    
+}
+
+.imgWrapper:hover .imgDescription{
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+
+
+
+
+.imgDescription {
+    width: calc(100% - 60px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    /*    border: 1px blue solid;*/
+    display: inline-block;
+    background-color: #373737;
+    opacity: 0;
+    transition: opacity .3s;
+
+}
+
+.imgDescription p{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #dcd0c0;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.1em;
+    hyphens: none;
+
+    /*    border: 1px solid pink;*/
+
+}
+
+
+.intro{
+    margin: auto 30px;
+    font-family: 'FeijoaMedium';
+    font-size: 5.5em;
+/*    border: 1px solid blue;*/
+    width: 95%;
+    min-width: 300px;
+  margin-top: 60px;
+  
+}
+.intro p{
+ color: black;
+ 
+}
+
+.project img{
+ display: block;
+ width: 700px;
+ margin: 20px auto;
+}
+
+
+
+
+
+
+.projectDescription{
+    font-size: 1.5em;
+    width: 700px;
+    margin: 0px 30px 0px 30px;
+    
+}
+
+.projectDescription p{
+    line-height: 1.3em;
+    
+    
+}
+
+.projectDescription h1{
+    margin-bottom: 5px;
+    font-size: 1em;
+    
+}
+
+
+
+footer{
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
+    line-height: 60px; 
+    background-color:#dcd0c0;
+    /*border: 1px solid purple;*/
+    
+}
+
+footer p{
+    padding-left: 30px;
+    width: auto;
+    height: auto;
+    
+}
+
+footer a{
+    padding-left: 30px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+footer a:hover{
+    color: dimgray;
+    
+}
+
+#myBtn {
+    display: none;  /*Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: #373737; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px;  /*Some padding */
+    background-color: #dcd0c0;
+ border-radius: 0;
+   
+}
+
+#myBtn:hover {
+    color: dimgray;
+}
+
+
+
+@media screen and (max-width: 900px){
+ 
+
+ .imgWrapper img{
+  width: 90%;
+  margin: 70px auto 70px auto;
+ }
+ 
+ .imgDescription{
+  width: 100%;
+  left: 0px;
+ }
+ 
+ .projectDescription{
+  width: 75%;
+  font-size: 1.5em;
+ }
+ 
+ .project img{
+  width: 75%;
+ }
+    
+ header{
+  overflow: hidden;
+  height: 60px;
+ }
+ 
+ #title{
+  visibility: hidden;
+ 
+ }
+ 
+ #altTitle{
+  visibility: visible;
+ }
+ 
+ .intro{
+  font-size: 2em;
+  width: 75%;
+  color: black;
+  padding-top: 100px;
+}
+ 
+ #myBtn{
+  right: 0px;
+  bottom: 20px;
+ }
+ 
+ #myBtn:hover{
+ color: #373737;
+ }
+
+ footer{
+  width: 100%;
+  margin: 0 auto;
+   
+  }
+ 
+ footer a{
+  padding 10px;
+ }
+ 
+}
+
+
+
+/* ----------- iPhone 6+, 7+ and 8+ -----------
+*/
+
