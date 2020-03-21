@@ -4,45 +4,47 @@ padding: 0;
 box-sizing: border-box;
 
 }
-@font-face {
-font-family: 'FeijoaBold';
-src: url('FeijoaBold.eot');
-src: url('FeijoaBold.eot?#iefix') format('embedded-opentype'),
-url('FeijoaBold.woff') format('woff'),
-url('FeijoaBold.ttf') format('truetype');
-font-weight: bold;
-font-style: normal;
-}
+/*
+ @font-face {
+ font-family: 'FeijoaBold';
+ src: url('FeijoaBold.eot');
+ src: url('FeijoaBold.eot?#iefix') format('embedded-opentype'),
+ url('FeijoaBold.woff') format('woff'),
+ url('FeijoaBold.ttf') format('truetype');
+ font-weight: bold;
+ font-style: normal;
+ }
 
-@font-face {
-font-family: 'FeijoaMedium';
-src: url('FeijoaMedium.eot');
-src: url('FeijoaMedium.eot?#iefix') format('embedded-opentype'),
-url('FeijoaMedium.woff') format('woff'),
-url('FeijoaMedium.ttf') format('truetype');
-font-weight: 500;
-font-style: normal;
-}
+ @font-face {
+ font-family: 'FeijoaMedium';
+ src: url('FeijoaMedium.eot');
+ src: url('FeijoaMedium.eot?#iefix') format('embedded-opentype'),
+ url('FeijoaMedium.woff') format('woff'),
+ url('FeijoaMedium.ttf') format('truetype');
+ font-weight: 500;
+ font-style: normal;
+ }
 
-@font-face {
-font-family: 'FeijoaDisplay';
-src: url('FeijoaDisplay.eot');
-src: url('FeijoaDisplay.eot?#iefix') format('embedded-opentype'),
-url('FeijoaDisplay.woff') format('woff'),
-url('FeijoaDisplay.ttf') format('truetype');
-font-weight: 900;
-font-style: normal;
-}
+ @font-face {
+ font-family: 'FeijoaDisplay';
+ src: url('FeijoaDisplay.eot');
+ src: url('FeijoaDisplay.eot?#iefix') format('embedded-opentype'),
+ url('FeijoaDisplay.woff') format('woff'),
+ url('FeijoaDisplay.ttf') format('truetype');
+ font-weight: 900;
+ font-style: normal;
+ }
 
-@font-face {
-font-family: 'FeijoaMediumItalic';
-src: url('FeijoaMediumItalic.eot');
-src: url('FeijoaMediumItalic.eot?#iefix') format('embedded-opentype'),
-url('FeijoaMediumItalic.woff') format('woff'),
-url('FeijoaMediumItalic.ttf') format('truetype');
-font-weight: 500;
-font-style: italic;
-}
+ @font-face {
+ font-family: 'FeijoaMediumItalic';
+ src: url('FeijoaMediumItalic.eot');
+ src: url('FeijoaMediumItalic.eot?#iefix') format('embedded-opentype'),
+ url('FeijoaMediumItalic.woff') format('woff'),
+ url('FeijoaMediumItalic.ttf') format('truetype');
+ font-weight: 500;
+ font-style: italic;
+ }
+*/
 
 
 
@@ -53,7 +55,7 @@ font-style: italic;
 body{
     font-family: 'helvetica';
     height:100%;
-    background-color: #dcd0c0;
+ 
     color: #373737;
     hyphens: none;
 
@@ -65,9 +67,11 @@ header{
     position: fixed;
     width: 100vw;
     top: 0px;
-    background-color:#dcd0c0;  
+ margin-bottom: 100xp;
+    background-color:white;
+   box-shadow: 1px 1px 10px #555555;
     /*    border: solid 1px red;*/
-    height: auto;
+    height: 135px;
     overflow: hidden;
     z-index: 1;
 
@@ -82,13 +86,13 @@ header a{
 #title, #nav{
     flex-basis: 50%; 
     visibility: visible;
-    font-family: 'FeijoaMedium', 'Times', serif;
+    
     height: auto;
 
 }
 
 #myBtn{
-  font-family: 'FeijoaMedium', 'Times', serif;
+ 
  font-size: 1em;
 }
 
@@ -105,6 +109,11 @@ header a{
 
 }
 
+#title img{
+ width: 100px;
+ margin-top: 15px;
+}
+
 
 #altTitle a:hover{
     transition: color .3s;
@@ -113,26 +122,31 @@ header a{
 }
 
 #altTitle{
-    line-height: 60px;
+    left: 10px;
     position: fixed;
-    padding-left: 30px;
+    margin: auto auto;
     visibility: hidden;
-    font-family: 'FeijoaMedium', 'Times', serif;
+  
     /*    border: solid 1px green;*/
     
 }
 
-#nav a{
+#nav {
     display: inline-block;
     line-height: 60px;
     text-align: right;
     width: auto;
+  height: 135px;
     position: absolute;
-    padding-right: 30px;
+    padding-right: 50px;
     right: 0px;
 
 }
 
+#nav a{
+ padding-right: 30px;
+ line-height: 135px;
+}
 
 
 #nav a:hover{
@@ -144,11 +158,16 @@ header a{
 .mainContent{
     width: auto;
     height: auto;
-    margin: 0px auto 0px auto;
-    /*    border: 1px solid black;*/
-    position: relative; 
-    top: 60px;
+    margin-top:155px;
     
+}
+
+#largetext{
+ font-size: 3rem;
+ line-height: 65px;
+ width: 50%;
+ margin: 30px auto;
+ text-align: justify;
 }
 
 .imgWrapper {
@@ -261,7 +280,7 @@ footer{
     position: fixed;
     bottom: 0px;
     line-height: 60px; 
-    background-color:#dcd0c0;
+    background-color:white;
     /*border: 1px solid purple;*/
     
 }
@@ -332,6 +351,106 @@ footer a:hover{
     
  header{
   overflow: hidden;
+  height: 80px;
+ }
+ 
+ 
+ 
+ #title img{
+  width: 70px;
+  margin: 5px auto;
+ }
+
+ 
+ .intro{
+  font-size: 2em;
+  width: 75%;
+  color: black;
+  padding-top: 100px;
+}
+ 
+ .mainContent{
+  margin-top: 0;
+ }
+ 
+ #myBtn{
+  right: 0px;
+  bottom: 20px;
+ }
+ 
+ #myBtn:hover{
+ color: #373737;
+ }
+
+ footer{
+  width: 100%;
+  margin: 0 auto;
+   
+  }
+ 
+ footer a{
+  padding 10px;
+  font-size: 1rem;
+ }
+ 
+ #nav {
+    display: inline-block;
+    line-height: 60px;
+    text-align: right;
+    width: auto;
+  height: 60px;
+    position: absolute;
+    padding-right: 0px;
+    right: 0px;
+
+}
+
+#nav a{
+ padding-right: 30px;
+ line-height: 60px;
+}
+
+#largetext{
+ font-size: 2rem;
+line-height: 2.5rem;
+ width: auto;
+ margin: 30px 25px;
+ text-align: justify;
+}
+
+}
+ 
+ 
+}
+
+
+
+/* ----------- iPhone 6+, 7+ and 8+ -----------
+*/
+@media screen and (max-width: 450px){
+ 
+
+ .imgWrapper img{
+  width: 90%;
+  margin: 70px auto 70px auto;
+ }
+ 
+ .imgDescription{
+  width: 100%;
+  left: 0px;
+ }
+ 
+ .projectDescription{
+  width: 75%;
+  font-size: 1.5em;
+ }
+ 
+ .project img{
+  width: 75%;
+ }
+    
+ header{
+  overflow: hidden;
   height: 60px;
  }
  
@@ -371,10 +490,23 @@ footer a:hover{
   font-size: 1rem;
  }
  
+ #nav {
+    display: inline-block;
+    line-height: 60px;
+    text-align: right;
+    width: auto;
+  height: 60px;
+    position: absolute;
+    padding-right: 0px;
+    right: 0px;
+
 }
 
+#nav a{
+ padding-right: 30px;
+ line-height: 60px;
+}
 
-
-/* ----------- iPhone 6+, 7+ and 8+ -----------
-*/
-
+ 
+ 
+}
