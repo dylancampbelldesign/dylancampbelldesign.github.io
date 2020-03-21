@@ -4,6 +4,10 @@ padding: 0;
 box-sizing: border-box;
 
 }
+
+h2{
+ margin-bottom: 3px;
+}
 /*
  @font-face {
  font-family: 'FeijoaBold';
@@ -163,9 +167,8 @@ header a{
 }
 
 #largetext{
- font-size: 3rem;
- line-height: 65px;
- width: 50%;
+ font-size: 1.3rem;
+ width: 70%;
  margin: 30px auto;
  text-align: justify;
 }
